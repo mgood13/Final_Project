@@ -1,38 +1,10 @@
-absl-py==0.9.0
-anyio @ file:///Users/runner/miniforge3/conda-bld/anyio_1612745567799/work/dist
-appnope @ file:///Users/runner/miniforge3/conda-bld/appnope_1610094673091/work
-argon2-cffi @ file:///Users/runner/miniforge3/conda-bld/argon2-cffi_1610522650583/work
-astor==0.8.0
-async-generator==1.10
-attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_1605083924122/work
-Babel @ file:///home/conda/feedstock_root/build_artifacts/babel_1605182336601/work
-backports.functools-lru-cache==1.6.1
-bleach @ file:///home/conda/feedstock_root/build_artifacts/bleach_1612213472466/work
-boto3 @ file:///home/conda/feedstock_root/build_artifacts/boto3_1614125510613/work
-botocore @ file:///home/conda/feedstock_root/build_artifacts/botocore_1614120121103/work
-brotlipy==0.7.0
-certifi==2020.12.5
-cffi @ file:///Users/runner/miniforge3/conda-bld/cffi_1613414031019/work
-chardet @ file:///Users/runner/miniforge3/conda-bld/chardet_1610093460760/work
-click @ file:///home/linux1/recipes/ci/click_1610990599742/work
-contextvars==2.4
-cryptography @ file:///Users/runner/miniforge3/conda-bld/cryptography_1612993761612/work
-cycler==0.10.0
-dataclasses @ file:///home/conda/feedstock_root/build_artifacts/dataclasses_1602075176424/work
-decorator==4.4.2
-defusedxml==0.6.0
-entrypoints @ file:///home/conda/feedstock_root/build_artifacts/entrypoints_1605121927639/work/dist/entrypoints-0.3-py2.py3-none-any.whl
 Flask @ file:///home/ktietz/src/ci/flask_1611932660458/work
 gast==0.2.2
-google-api-python-client==1.6.3
-google-pasta==0.2.0
 grpcio==1.16.1
 gunicorn==20.0.4
 h5py==2.10.0
 httplib2 @ file:///home/conda/feedstock_root/build_artifacts/httplib2_1612815608648/work
 idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1593328102638/work
-immutables @ file:///Users/runner/miniforge3/conda-bld/immutables_1612966360033/work
-importlib-metadata @ file:///Users/runner/miniforge3/conda-bld/importlib-metadata_1610355262902/work
 ipykernel @ file:///Users/runner/miniforge3/conda-bld/ipykernel_1613852997064/work/dist/ipykernel-5.5.0-py3-none-any.whl
 ipython==5.8.0
 ipython-genutils==0.2.0
