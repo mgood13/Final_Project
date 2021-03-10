@@ -9,9 +9,12 @@ $(function(){
 				response = JSON.parse(response);
 				console.log(response)
 
+                var records = 0
+                records = response.keys.length
 
-
-
+                for (i = 0; i < records; i++) {
+                    console.log(i)
+                }
 
 
 			},
