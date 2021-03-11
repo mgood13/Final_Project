@@ -23,14 +23,18 @@ def page_population():
 
 
 
-@app.route('/visualization')
+@app.route('/example')
 def contact():
-    return render_template('visualize.html')
+    return render_template('example.html')
 
 
-@app.route('/about')
+@app.route('/disease_index')
 def about():
-    return render_template('about.html')
+    disease_detail = pd.read_csv('disease_detail.csv')
+    disease_detail = disease_detail.drop('Type', axis = 1)
+    disease_json = disease_detail.to_json()
+
+    return render_template('disease_index.html', structure = disease_json)
 
 
 @app.route('/diagnose/symptoms=<symptoms>', methods=['POST'])
