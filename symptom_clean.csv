@@ -1,5 +1,5 @@
 colName,Clean,Category
-acute_liver_failure,Acute Liver Failure,Abdomen
+acute_liver_failure,Acute_Liver_Failure,Abdomen
 cramps,Cramps,Abdomen
 diarrhoea,Diarrhea,Abdomen
 distention_of_abdomen,Distention of Abdomen,Abdomen
@@ -36,7 +36,7 @@ dehydration,Dehydration,General
 excessive_hunger,Excessive Hunger,General
 extra_marital_contacts,Extra Marital Contacts,General
 family_history,Family History,General
-fluid_overload,Fluid Overload,General
+fluid_overload,Fluid Overload (cysts),General
 fluid_overload,Fluid Overload,General
 history_of_alcohol_consumption,History of Alcohol Consumption,General
 increased_appetite,Increased Appetite,General
@@ -64,7 +64,7 @@ swelled_lymph_nodes,Swelled Lymph Nodes,General
 swelling_joints,Swelling Joints,General
 swollen_blood_vessels,Swollen Blood Vessels,General
 swollen_extremeties,Swollen Extremeties,General
-toxic_look_(typhos),Toxic Look (Typhos),General
+toxic_look_typhos,Toxic Look (Typhos),General
 vomiting,Vomiting,General
 weakness_in_limbs,Weakness in Limbs,General
 weakness_of_one_body_side,Weakness of One Body Side,General
@@ -112,15 +112,15 @@ bladder_discomfort,Bladder Discomfort,Pelvic
 burning_micturition,Burning Micturition,Pelvic
 continuous_feel_of_urine,Continuous Feel of Urine,Pelvic
 dark_urine,Dark Urine,Pelvic
-foul_smell_of urine,Foul Smell of Urine,Pelvic
+foul_smell_of_urine,Foul Smell of Urine,Pelvic
 hip_joint_pain,Pain - Hip Joint,Pelvic
 polyuria,Polyuria,Pelvic
-spotting_ urination,Spotting Urination,Pelvic
+spotting_urination,Spotting Urination,Pelvic
 yellow_urine,Yellow Urine,Pelvic
 blackheads,Blackheads,Skin
 blister,Blister,Skin
 bruising,Bruising,Skin
-dischromic _patches,Dichromic Patches,Skin
+dischromic_patches,Dichromic Patches,Skin
 inflammatory_nails,Inflammatory Nails,Skin
 itching,Itching,Skin
 nodal_skin_eruptions,Nodal Skin,Skin
