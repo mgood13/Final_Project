@@ -1,0 +1,133 @@
+colName,Clean,Category
+acute_liver_failure,Acute_Liver_Failure,Abdomen
+cramps,Cramps,Abdomen
+diarrhoea,Diarrhea,Abdomen
+distention_of_abdomen,Distention of Abdomen,Abdomen
+indigestion,Indigestion,Abdomen
+internal_itching,Internal Itching,Abdomen
+nausea,Nausea,Abdomen
+abdominal_pain,Pain - Abdominal,Abdomen
+belly_pain,Pain - Belly,Abdomen
+stomach_pain,Pain - Stomach,Abdomen
+stomach_bleeding,Stomach Bleeding,Abdomen
+swelling_of_stomach,Swelling of Stomach,Abdomen
+cold_hands_and_feets,Cold Hands and Feet,Arm
+back_pain,Pain - Back,Back
+bloody_stool,Bloody Stool,Buttocks
+constipation,Constipation,Buttocks
+irritation_in_anus,Irritation - Anus,Buttocks
+pain_in_anal_region,Pain - Anal Region,Buttocks
+pain_during_bowel_movements,Pain - During Bowel Movements,Buttocks
+passage_of_gases,Passage of Gases,Buttocks
+blood_in_sputum,Blood in Sputum,Chest
+breathlessness,Breathlessness,Chest
+chest_pain,Pain - Chest,Chest
+congestion,Congestion,Chest
+mucoid_sputum,Micoid Sputum,Chest
+palpitations,Palpitations,Chest
+rusty_sputum,Rusty Sputim,Chest
+cough,Cough,Chest
+fast_heart_rate,Fast Heart Rate,Chest
+phlegm,Phlegm,Chest
+acidity,Acidity,General
+chills,Chills,General
+coma,Coma,General
+dehydration,Dehydration,General
+excessive_hunger,Excessive Hunger,General
+extra_marital_contacts,Extra Marital Contacts,General
+family_history,Family History,General
+fluid_overload,Fluid Overload (cysts),General
+fluid_overload,Fluid Overload,General
+history_of_alcohol_consumption,History of Alcohol Consumption,General
+increased_appetite,Increased Appetite,General
+irregular_sugar_level,Irregular Sugar Levels,General
+lack_of_concentration,Lack of Concentration,General
+loss_of_appetite,Loss of Appetite,General
+loss_of_balance,Loss of Balance,General
+loss_of_smell,Loss of Smell,General
+malaise,Malaise,General
+movement_stiffness,Movement Stiffness,General
+muscle_wasting,Muscle Wasting,General
+muscle_weakness,Muscle Weakness,General
+obesity,Obesity,General
+joint_pain,Pain - Joint,General
+muscle_pain,Pain - Muscle,General
+receiving_blood_transfusion,Receiving Blood Transfusion,General
+receiving_unsterile_injections,Receiving Unsterile Injections,General
+scurring,Scurring,General
+shivering,Shivering,General
+silver_like_dusting,Silver-Like Dusting,General
+slurred_speech,Slurred Speech,General
+spinning_movements,Spinning Movements,General
+sweating,Sweating,General
+swelled_lymph_nodes,Swelled Lymph Nodes,General
+swelling_joints,Swelling Joints,General
+swollen_blood_vessels,Swollen Blood Vessels,General
+swollen_extremeties,Swollen Extremeties,General
+toxic_look_typhos,Toxic Look (Typhos),General
+vomiting,Vomiting,General
+weakness_in_limbs,Weakness in Limbs,General
+weakness_of_one_body_side,Weakness of One Body Side,General
+weight_gain,Weight Gain,General
+weight_loss,Weight Loss,General
+brittle_nails,Brittle Nails,Hand
+altered_sensorium,Altered Sensorium,Head
+anxiety,Anxiety,Head
+blurred_and_distorted_vision,Blurred and Distorted Vision,Head
+continuous_sneezing,Continuous Sneezing,Head
+depression,Depression,Head
+dizziness,Dizziness,Head
+drying_and_tingling_lips,Drying and Tingling Lips,Head
+fatigue,Fatigue,Head
+headache,Headache,Head
+high_fever,High Fever,Head
+irritability,Irritability,Head
+lethargy,Lethargy,Head
+mild_fever,Mild Fever,Head
+mood_swings,Mood Swings,Head
+pain_behind_the_eyes,Pain - Behind Eyes,Head
+puffy_face_and_eyes,Puffy Face and Eyes,Head
+red_sore_around_nose,Red Sore Around Nose,Head
+redness_of_eyes,Redness of Eyes,Head
+restlessness,Restlessness,Head
+runny_nose,Runny Nose,Head
+sinus_pressure,Sinus Pressure,Head
+sunken_eyes,Sunken Eyes,Head
+ulcers_on_tongue,Ulcers on Tongue,Head
+unsteadiness,Unsteadiness,Head
+visual_disturbances,Visual Disturbances,Head
+watering_from_eyes,Watering From Eyes,Head
+yellowing_of_eyes,Yellowing of Eyes,Head
+knee_pain,Pain - Knees,Leg
+painful_walking,Pain - Walking,Leg
+prominent_veins_on_calf,Prominent Veins on Calf,Leg
+swollen_legs,Swollen Legs,Leg
+enlarged_thyroid,Enlarged Thyroid,Neck
+throat_irritation,Irritation - Throat,Neck
+neck_pain,Pain - Neck,Neck
+patches_in_throat,Patches in Throat,Neck
+stiff_neck,Stiff Neck,Neck
+abnormal_menstruation,Abnormal Menstruation,Pelvic
+bladder_discomfort,Bladder Discomfort,Pelvic
+burning_micturition,Burning Micturition,Pelvic
+continuous_feel_of_urine,Continuous Feel of Urine,Pelvic
+dark_urine,Dark Urine,Pelvic
+foul_smell_of_urine,Foul Smell of Urine,Pelvic
+hip_joint_pain,Pain - Hip Joint,Pelvic
+polyuria,Polyuria,Pelvic
+spotting_urination,Spotting Urination,Pelvic
+yellow_urine,Yellow Urine,Pelvic
+blackheads,Blackheads,Skin
+blister,Blister,Skin
+bruising,Bruising,Skin
+dischromic_patches,Dichromic Patches,Skin
+inflammatory_nails,Inflammatory Nails,Skin
+itching,Itching,Skin
+nodal_skin_eruptions,Nodal Skin,Skin
+pus_filled_pimples,Pus Filled Pimples,Skin
+red_spots_over_body,Red Spots Over Body,Skin
+skin_peeling,Skin Peeling,Skin
+skin_rash,Skin Rash,Skin
+small_dents_in_nails,Small Dents in Nails,Skin
+yellow_crust_ooze,Yellow Crust Ooze,Skin
+yellowish_skin,Yellowish Skin,Skin
