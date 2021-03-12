@@ -50,6 +50,8 @@ def diagnosis(symptoms):
         else:
             model_input.append("0")
 
+        print(str(val) + ": " + model_input[-1])
+
     print(model_input)
 
     user_symptoms = pd.Series(symptoms)
