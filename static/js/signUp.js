@@ -117,9 +117,11 @@ $(function(){
                     outputs_row.append('td').text(`${response[0]['Prognosis']}`)
                     outputs_row.append('td').text(`${Math.round(response[0]['Probability'] * 10000) / 100}%`)
 
+
                     var outputs_row = t_body.append('tr')
                     outputs_row.append('td').text(`${response[1]['Prognosis']}`)
                     outputs_row.append('td').text(`${Math.round(response[1]['Probability'] * 10000) / 100}%`)
+                    console.log(`${Math.round(response[1]['Probability'] * 10000) / 100}%`)
 
                     var outputs_row = t_body.append('tr')
                     outputs_row.append('td').text(`${response[2]['Prognosis']}`)
