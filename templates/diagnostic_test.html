@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Am I Dying Inc.</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="diagnostic_test">Diagnostic Test</a></li>
+      <li><a href="disease_index">Disease index</a></li>
+      <li><a href="model">Our Model</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container" align="center"><input style="text-align:center;font-size:24px;color:white;background-color:steelblue" type="submit" class = "populate_symptoms" value="Enter Symptoms" data-toggle="modal" data-target="#exampleModal"><br><br></div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#General">General</a></li>
+  <li><a data-toggle="tab" href="#Pelvic">Pelvic</a></li>
+  <li><a data-toggle="tab" href="#Abdomen">Abdomen</a></li>
+  <li><a data-toggle="tab" href="#Head">Head</a></li>
+  <li><a data-toggle="tab" href="#Back">Back</a></li>
+  <li><a data-toggle="tab" href="#Skin">Skin</a></li>
+  <li><a data-toggle="tab" href="#Chest">Chest</a></li>
+  <li><a data-toggle="tab" href="#Buttocks">Buttocks</a></li>
+  <li><a data-toggle="tab" href="#Hand">Hand</a></li>
+  <li><a data-toggle="tab" href="#Arm">Arm</a></li>
+  <li><a data-toggle="tab" href="#Neck">Neck</a></li>
+  <li><a data-toggle="tab" href="#Leg">Leg</a></li>
+</ul>
+        <div class="tab-content">
+  <div id="General" class="tab-pane fade in active">
+    <h3>General</h3>
+
+
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Symptom</th>
+      <th scope="col">Symptom Present?</th>
+
+    </tr>
+  </thead>
+      <tbody></tbody>
+
+
+    </table>
+  </div>
+  <div id="Pelvic" class="tab-pane fade">
+    <h3>Pelvic</h3>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Symptom</th>
+      <th scope="col">Symptom Present?</th>
+
+    </tr>
+  </thead>
+      <tbody></tbody>
+
+
+    </table>
+  </div>
+  <div id="Abdomen" class="tab-pane fade">
+    <h3>Abdomen</h3>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Symptom</th>
+      <th scope="col">Symptom Present?</th>
+
+    </tr>
+  </thead>
+      <tbody></tbody>
+
+
+    </table>
+  </div>
+  <div id="Head" class="tab-pane fade">
+    <h3>Head</h3>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Symptom</th>
+      <th scope="col">Symptom Present?</th>
+    </tr>
+  </thead>
+      <tbody></tbody>
+
+
+    </table>
+  </div>
+  <div id="Back" class="tab-pane fade">
+    <h3>Back</h3>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Symptom</th>
+      <th scope="col">Symptom Present?</th>
+
+    </tr>
+  </thead>
+      <tbody></tbody>
+
+
+    </table>
+  </div>
+  <div id="Skin" class="tab-pane fade">
+    <h3>Skin</h3>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Symptom</th>
+      <th scope="col">Symptom Present?</th>
+    </tr>
+  </thead>
+      <tbody></tbody>
+
+
+    </table>
+
+  </div>
+  <div id="Chest" class="tab-pane fade">
+    <h3>Chest</h3>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Symptom</th>
+
+      <th scope="col">Symptom Present?</th>
+    </tr>
+  </thead>
+      <tbody></tbody>
+
+
+    </table>
+  </div>
+  <div id="Buttocks" class="tab-pane fade">
+    <h3>Buttocks</h3>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Symptom</th>
+
+      <th scope="col">Symptom Present?</th>
+    </tr>
+  </thead>
+      <tbody></tbody>
+
+
+    </table>
+  </div>
+  <div id="Hand" class="tab-pane fade">
+    <h3>Hand</h3>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Symptom</th>
+
+      <th scope="col">Symptom Present?</th>
+    </tr>
+  </thead>
+      <tbody></tbody>
+
+
+    </table>
+  </div>
+  <div id="Arm" class="tab-pane fade">
+    <h3>Arm</h3>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Symptom</th>
+
+      <th scope="col">Symptom Present?</th>
+    </tr>
+  </thead>
+      <tbody></tbody>
+
+
+    </table>
+  </div>
+  <div id="Neck" class="tab-pane fade">
+    <h3>Neck</h3>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Symptom</th>
+
+      <th scope="col">Symptom Present?</th>
+    </tr>
+  </thead>
+      <tbody></tbody>
+
+
+    </table>
+  </div>
+  <div id="Leg" class="tab-pane fade">
+    <h3>Leg</h3>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Symptom</th>
+
+      <th scope="col">Symptom Present?</th>
+    </tr>
+  </thead>
+      <tbody></tbody>
+
+
+    </table>
+  </div>
+
+
+</div>
+
+      </div>
+      <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary diagnose" data-dismiss="modal" style="text-align:left">Diagnose</button>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class = row>
+  <p>Stuff here</p>
+
+
+</div>
+<div class = row>
+  <div class = 'col-md-3'></div>
+    <div class = 'col-md-6'>
+      <div class="card">
+  <div class="card-body">
+    <h3 align = "center"><strong> DISCLOSURE </strong></h3>
+  <p align = "center">This tool does not provide medical advice and is intended for informational purposes only.  Patients experiencing symptoms should still talk with their health care provider or call 9-1-1 if they are experiencing severe emergent symptoms.
+  </p>
+  </div>
+</div>
+
+    </div>
+
+
+
+
+
+</div>
+
+
+
+  <script src="static/js/signUp.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+</body>
+</html>

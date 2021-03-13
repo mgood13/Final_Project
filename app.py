@@ -1,11 +1,12 @@
 from flask import request, Flask, jsonify, render_template, redirect, json, url_for, session
 from flask_wtf import FlaskForm
 from wtforms import TextField, SubmitField
-from wtform.validatiors import NumberRange
 import pandas as pd
 import numpy as np 
 from tensorflow.keras.models import load_model
 import joblib
+from keras.backend import set_session
+
 
 
 app = Flask(__name__)
@@ -14,7 +15,7 @@ symptoms_df = pd.read_csv('symptom_clean.csv')
 
 @app.route('/')
 def hello():
-    return render_template('example.html')
+    return render_template('landing.html')
 
 
 @app.route('/get_symptoms')
@@ -30,9 +31,9 @@ def return_predict(model,scaler, symptoms_json):
 
 
 
-@app.route('/example')
+@app.route('/diagnostic_test')
 def contact():
-    return render_template('example.html')
+    return render_template('diagnostic_test.html')
 
 
 # @app.route('/disease_index')
@@ -42,7 +43,8 @@ def contact():
 #     disease_json = disease_detail.to_json()
 
 #     return render_template('disease_index.html', structure = disease_json)
-@app.route("/GetData")
+
+@app.route("/disease_index")
 def GetData():
     df = pd.read_csv("DemoData.csv")
     temp = df.to_dict('disease')
