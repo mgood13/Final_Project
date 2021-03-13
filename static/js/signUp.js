@@ -101,6 +101,11 @@ $(function(){
                     .attr('height', 500)
                     .attr('width',600)
 
+                    $('.other_diseases thead tr').detach();
+                    $('.other_diseases tbody tr').detach();
+
+                    $('.jumbotron_placeholder div').detach();
+
                     var option_table = d3.select('.other_diseases')
                     var t_head = option_table.select('thead')
                     var optionrow = t_head.append('tr')
@@ -114,15 +119,14 @@ $(function(){
 
                     var outputs_row = t_body.append('tr')
                     outputs_row.append('td').text(`${response[1]['Prognosis']}`)
-                    outputs_row.append('td').text(`${Math.round(response[0]['Probability'] * 10000) / 100}%`)
+                    outputs_row.append('td').text(`${Math.round(response[1]['Probability'] * 10000) / 100}%`)
 
                     var outputs_row = t_body.append('tr')
                     outputs_row.append('td').text(`${response[2]['Prognosis']}`)
-                    outputs_row.append('td').text(`${Math.round(response[0]['Probability'] * 10000) / 100}%`)
+                    outputs_row.append('td').text(`${Math.round(response[2]['Probability'] * 10000) / 100}%`)
 
 
                     var make_card = d3.select('.jumbotron_placeholder')
-                    console.log(make_card)
                     var card_body = make_card.append('div').attr('class', 'jumbotron').style('border-radius','30px')
                     card_body.append('h2').attr('class','display-4').text('Most Likely Diagnosis').style('text-align','center')
                     card_body.append('p').attr('class','lead').text(`${response[0]['Prognosis']}`).style('text-align','center')
