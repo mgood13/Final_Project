@@ -39,8 +39,6 @@ $(function(){
                     .attr('name',"symptoms")
                     .attr('value',`${response[i]['colName']}`)
 
-
-
                 }
                 var checkboxes = document.querySelectorAll("input[type=checkbox][name=symptoms]");
 
@@ -59,11 +57,6 @@ $(function(){
 
                       })
                    });
-
-
-
-
-
 
 			},
 			error: function(error){
@@ -89,6 +82,69 @@ $(function(){
 
 $(function(){
 	$('.diagnose').click(function(){
+
+        var symptoms_json = JSON.stringify(symptoms);
+
+		$.ajax({
+			url: `/diagnose/symptoms=${symptoms_json}`,
+			data: 0,
+			type: 'POST',
+			success: function(response){
+				response = JSON.parse(response);
+				console.log(response)
+
+
+				console.log(response[0])
+
+                    image = d3.select('.diagnosis_image')
+                    image.attr('src',`/static/images/${response[0]['Prognosis']}.png`)
+                    .attr('height', 500)
+                    .attr('width',600)
+
+                    var option_table = d3.select('.other_diseases')
+                    var t_head = option_table.select('thead')
+                    var optionrow = t_head.append('tr')
+                    optionrow.append('th').text('Disease')
+                    optionrow.append('th').text('Probability')
+
+                    var t_body = option_table.select('tbody')
+                    var outputs_row = t_body.append('tr')
+                    outputs_row.append('td').text(`${response[0]['Prognosis']}`)
+                    outputs_row.append('td').text(`${Math.round(response[0]['Probability'] * 10000) / 100}%`)
+
+                    var outputs_row = t_body.append('tr')
+                    outputs_row.append('td').text(`${response[1]['Prognosis']}`)
+                    outputs_row.append('td').text(`${Math.round(response[0]['Probability'] * 10000) / 100}%`)
+
+                    var outputs_row = t_body.append('tr')
+                    outputs_row.append('td').text(`${response[2]['Prognosis']}`)
+                    outputs_row.append('td').text(`${Math.round(response[0]['Probability'] * 10000) / 100}%`)
+
+
+                    var make_card = d3.select('.jumbotron_placeholder')
+                    console.log(make_card)
+                    var card_body = make_card.append('div').attr('class', 'jumbotron').style('border-radius','30px')
+                    card_body.append('h2').attr('class','display-4').text('Most Likely Diagnosis').style('text-align','center')
+                    card_body.append('p').attr('class','lead').text(`${response[0]['Prognosis']}`).style('text-align','center')
+                    card_body.append('hr').attr('class', 'my-4')
+                    card_body.append('p').attr('class','lead').text('For more information click Learn More').style('text-align','center')
+                    var button = card_body.append('p').attr('class','lead').style('text-align','center')
+                    button.append('a').attr('class','btn btn-primary btn-lg').attr('href','/GetData').attr('role','button').text('Learn More')
+
+			},
+			error: function(error){
+				console.log(error);
+			}
+		});
+
+	});
+});
+
+
+
+
+$(function(){
+	$('.disease_index').click(function(){
 
         var symptoms_json = JSON.stringify(symptoms);
 

@@ -42,7 +42,7 @@ def contact():
 
 @app.route("/GetData")
 def GetData():
-    df = pd.read_csv("disease_detail.csv")
+    df = pd.read_csv("static/js/disease_detail.csv")
     temp = df.to_dict('disease')
     columnNames = df.columns
     return render_template('disease_index.html', records=temp, colnames=columnNames)

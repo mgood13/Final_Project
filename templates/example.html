@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="'stylesheet" href="'/static/css/style.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
+
+
 
 
 
@@ -20,11 +23,32 @@
     </div>
     <ul class="nav navbar-nav">
       <li><a href="#">Diagnostic Test</a></li>
-      <li><a href="/disease_index">Disease index</a></li>
-      <li><a href="#">Our Model</a></li>
+      <li><a href="/GetData">Disease index</a></li>
+      <li><a href="/model">Our Model</a></li>
     </ul>
   </div>
 </nav>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Our Model</h1>
+    <p> If we have taken anything out of the past year, it's a compulsive urge to keep ourselves healthy and monitor any sign of disease.
+      We fear even the smallest of symptoms because they could be the first sign of something serious. This fear is in competition with our
+      increasingly strong desire to remain inside and isolated from the general public in places like doctor's offices. If only there was a
+      way to understand what our symptoms mean from the comfort of our homes?
+    </p>
+
+    <p> This model was trained using a dataset of ~4000 people with 41 different diagnosable conditions. Simply click the 'Enter Symptoms'
+      button below and you will be prompted to choose from 132 different potential symptoms that you may be experiencing. The model will diagnose
+      the most likely disease to match the symptoms and will also provide a set of the three most likely diagnoses so that you can explore different
+      opinions.</p>
+    <p> The Our Model tab above will explain more how the model works and the work that went into developing it. The Disease Index tab will take
+      you to a full repository outlining further details and useful links to learn more information about each of the 41 different conditions in
+      our dataset.
+    </p>
+  </div>
+</div>
+
 
 <div class="container" align="center"><input style="text-align:center;font-size:24px;color:white;background-color:steelblue" type="submit" class = "populate_symptoms" value="Enter Symptoms" data-toggle="modal" data-target="#exampleModal"><br><br></div>
 
@@ -254,12 +278,49 @@
 </div>
 
 
-
 <div class = row>
-  <p>Stuff here</p>
+  <div class = 'col-md-4'></div>
+  <div class = 'col-md-4'>
+
+    <div class = "jumbotron_placeholder"></div>
+
+  </div>
+</div>
+
+
+<div class = 'row'>
+  <div class = 'col-md-5'></div>
+  <div class = 'col-md-2'>
+    <table class = "table other_diseases">
+  <thead>
+
+  </thead>
+  <tbody>
+
+
+  </tbody>
+
+</table>
+  </div>
 
 
 </div>
+
+
+
+<div class = row>
+  <div class = 'col-md-4'></div>
+  <div class = 'col-md-4'>
+    <img class = 'diagnosis_image'>
+
+
+  </div>
+
+
+</div>
+
+
+
 <div class = row>
   <div class = 'col-md-3'></div>
     <div class = 'col-md-6'>
@@ -282,10 +343,13 @@
 
 
   <script src="static/js/signUp.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
 <script src="https://d3js.org/d3.v5.min.js"></script>
+<link rel="'stylesheet" href="'/static/css/style.css">
 
 
 </body>
 </html>
+
