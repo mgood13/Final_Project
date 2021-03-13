@@ -1,7 +1,11 @@
-from flask import request, Flask, jsonify, render_template, redirect, json
+from flask import request, Flask, jsonify, render_template, redirect, json, url_for, session
+from flask_wtf import FlaskForm
+from wtforms import TextField, SubmitField
+from wtform.validatiors import NumberRange
 import pandas as pd
-
-
+import numpy as np 
+from tensorflow.keras.models import load_model
+import joblib
 
 
 app = Flask(__name__)
@@ -20,6 +24,9 @@ def page_population():
     print('Hello there')
     return symptoms_json
 
+# define function for returning model prediction
+def return_predict(model,scaler, symptoms_json):
+    
 
 
 
@@ -28,13 +35,22 @@ def contact():
     return render_template('example.html')
 
 
-@app.route('/disease_index')
-def about():
-    disease_detail = pd.read_csv('disease_detail.csv')
-    disease_detail = disease_detail.drop('Type', axis = 1)
-    disease_json = disease_detail.to_json()
+# @app.route('/disease_index')
+# def about():
+#     disease_detail = pd.read_csv('disease_detail.csv')
+#     disease_detail = disease_detail.drop('Type', axis = 1)
+#     disease_json = disease_detail.to_json()
 
-    return render_template('disease_index.html', structure = disease_json)
+#     return render_template('disease_index.html', structure = disease_json)
+@app.route("/GetData")
+def GetData():
+    df = pd.read_csv("DemoData.csv")
+    temp = df.to_dict('disease')
+    columnNames = df.columns.values
+    return render_template('disease_index.html', records=temp, colnames=columnNames)
+@app.route('/model')
+def model():
+    return render_template('our_model.html')
 
 
 @app.route('/diagnose/symptoms=<symptoms>', methods=['POST'])
@@ -49,8 +65,6 @@ def diagnosis(symptoms):
 
         else:
             model_input.append("0")
-
-        print(str(val) + ": " + model_input[-1])
 
     print(model_input)
 
