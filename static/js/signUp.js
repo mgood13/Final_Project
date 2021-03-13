@@ -51,7 +51,12 @@ $(function(){
                       .filter(i => i.checked) // Use Array.filter to remove unchecked checkboxes.
                       .map(i => i.value) // Use Array.map to extract only the checkbox values from the array of objects.
 
-                    console.log(symptoms)
+                    console.log(symptoms[0])
+
+                    image = d3.select('.diagnosis_image')
+                    image.attr('src',`../images/${symptoms[0]['Prognosis']}`)
+
+
                       })
                    });
 
@@ -94,6 +99,25 @@ $(function(){
 			success: function(response){
 				response = JSON.parse(response);
 				console.log(response)
+
+
+				console.log(response[0])
+
+                    image = d3.select('.diagnosis_image')
+                    image.attr('src',`/static/images/${response[0]['Prognosis']}.png`)
+                    .attr('height', 500)
+                    .attr('width',500)
+
+
+                    var make_card = d3.select('.jumbotron_placeholder')
+                    console.log(make_card)
+                    var card_body = make_card.append('div').attr('class', 'jumbotron')
+                    card_body.append('h2').attr('class','display-4').text('Most Likely Diagnosis')
+                    card_body.append('p').attr('class','lead').text(`${response[0]['Prognosis']}`)
+                    card_body.append('hr').attr('class', 'my-4')
+                    card_body.append('p').attr('class','lead').text('For more information click Learn More')
+                    var button = card_body.append('p').attr('class','lead')
+                    button.append('a').attr('class','btn btn-primary btn-lg').attr('href','/GetData').attr('role','button').text('Learn More')
 
 			},
 			error: function(error){
