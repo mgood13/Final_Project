@@ -2,8 +2,7 @@ from flask import request, Flask, jsonify, render_template, redirect, json, url_
 import pandas as pd
 import numpy as np 
 from tensorflow.keras.models import load_model
-import joblib
-import tensorflow as tf
+
 
 
 app = Flask(__name__)
