@@ -36,7 +36,7 @@ dehydration,Dehydration,General
 excessive_hunger,Excessive Hunger,General
 extra_marital_contacts,Extra Marital Contacts,General
 family_history,Family History,General
-fluid_overload_cyst,Fluid Overload (cysts),General
+fluid_overload,Fluid Overload (cysts),General
 fluid_overload,Fluid Overload,General
 history_of_alcohol_consumption,History of Alcohol Consumption,General
 increased_appetite,Increased Appetite,General
@@ -131,3 +131,4 @@ skin_rash,Skin Rash,Skin
 small_dents_in_nails,Small Dents in Nails,Skin
 yellow_crust_ooze,Yellow Crust Ooze,Skin
 yellowish_skin,Yellowish Skin,Skin
+prognosis,Prognosis,Prognosis
